@@ -1,0 +1,15 @@
+pip install fastapi
+pip install uvicorn["standard"]
+uvicorn app:main --reload (to start the server)
+pip freeze > requirements.txt
+docker build . -t backend (to create docker image with tag backend)
+ docker run --name backend --rm -p 8000:8000 backend (to run a new container with image named backend)
+
+
+
+npx create-react-app frontend
+npm start (to start the server)
+npm i axios
+docker build . -t frontend
+docker network create foobar (to create a network)
+docker run --rm --name frontend --network foobar -p 3000:3000 frontend
