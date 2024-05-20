@@ -3,7 +3,7 @@ pip install uvicorn["standard"]
 uvicorn app:main --reload (to start the server)
 pip freeze > requirements.txt
 docker build . -t backend (to create docker image with tag backend)
- docker run --name backend --rm -p 8000:8000 backend (to run a new container with image named backend)
+docker run --name backend --rm -p 8000:8000 backend --network foobar (to run a new container with image named backend)
 
 
 
